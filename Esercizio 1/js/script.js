@@ -6,5 +6,13 @@ let number = 0;
 
 do {
     const numberInput = parseInt(prompt("inserisci un numero da 1 a 10"));
-    number = numberInput;
+    
+    if (isNaN(numberInput) == true) {
+        console.log("devi inserire un numero!");
+    } else {
+        console.log("il numero inserito è: " + numberInput);
+        number = numberInput;
+    }
+
 } while (number < 1 || number > 10);
+console.log("Il numero inserito è corretto");
