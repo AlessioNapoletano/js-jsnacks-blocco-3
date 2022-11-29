@@ -10,6 +10,7 @@ function getRandomNumber(numMax, numMin){
 
     return randomNumber;
 }
+
 const maxNumberInput = parseInt(prompt("inserisci il numero maggiore dell'intervallo"));
 const minNumberInput = parseInt(prompt("inserisci il numero minore dell'intervallo"));
 const randomNumber = getRandomNumber(maxNumberInput,minNumberInput);
