@@ -3,10 +3,14 @@
  */
 
 function getRandomNumber(numMax, numMin){
+    if(numMax < numMin){
+        return "Devi inserire prima il numero maggiore";
+    }
     const randomNumber = (Math.floor(Math.random() * (numMax - numMin + 1) + numMin));
 
     return randomNumber;
 }
-
-const randomNumber = getRandomNumber(2,1);
+const maxNumberInput = parseInt(prompt("inserisci il numero maggiore dell'intervallo"));
+const minNumberInput = parseInt(prompt("inserisci il numero minore dell'intervallo"));
+const randomNumber = getRandomNumber(maxNumberInput,minNumberInput);
 console.log(randomNumber);
