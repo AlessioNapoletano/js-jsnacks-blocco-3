@@ -17,13 +17,15 @@ function newPElement(array){
         if (array[i] % 2 === 0){
             const divElement = document.getElementById("odd");
             const newPElement = document.createElement("p");
-            newPElement.classList = "font-green";
+            divElement.classList = "d-flex";
+            newPElement.classList.add("font-green", "padding");
             newPElement.innerHTML = array[i];
             divElement.append(newPElement);
         } else {
             const divElement = document.getElementById("even");
             const newPElement = document.createElement("p");
-            newPElement.classList = "font-red";
+            divElement.classList = "d-flex";
+            newPElement.classList.add("font-red", "padding");
             newPElement.innerHTML = array[i];
             divElement.append(newPElement);
         }

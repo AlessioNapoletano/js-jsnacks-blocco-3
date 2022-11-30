@@ -5,3 +5,11 @@
 .font-green{
     color: green;
 }
+
+.d-flex{
+    display: flex;
+}
+
+.padding{
+    padding: 2rem
+}
